@@ -5,7 +5,11 @@ jobs:
             name: Selenium Test Job
             runs-on: windows-latest
             steps:
-            - run: echo "Thiis running inside a ${{runner.os}} server in GitHub"
+             - run: echo "Thiis running inside a ${{runner.os}} server in GitHub"
+             - name: checkout source code
+               uses: actions/checkout@v6.0.1
+             - run: echo "This repo is ${{ github.repository }} .."
+            
     
     
     
