@@ -12,7 +12,7 @@ jobs:
              - name: Run an inline script
                run: 
                  mkdir newfolder
-                 ls -1
+                 ls -s
                   
             
     
